@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Header Nav Design</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Montserrat -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="menu">
+          <ion-icon
+            name="menu-sharp"
+            class="icon menu-icon"
+            id="menuBtn"
+          ></ion-icon>
+        </div>
+        <div class="logo">
+          <!-- <a href="index.html"
+            ><img
+              src="./assets/images/logo.png"
+              width="100"
+          /></a> -->
+          <h1>jcfcodex</h1>
+        </div>
+        <div class="search-cart_btn">
+          <div class="search">
+            <ion-icon
+              name="search-sharp"
+              class="icon search-icon active"
+              id="searchBtn"
+            ></ion-icon>
+          </div>
+          <div class="cart">
+            <ion-icon name="bag-handle-sharp" class="icon cart-icon"></ion-icon>
+          </div>
+        </div>
+
+        <div class="input-box" id="searchInputBox">
+          <div class="input-container">
+            <input
+              type="text"
+              name="search"
+              id="searchBoxActive"
+              autocomplete="off"
+              spellcheck="false"
+              placeholder="Search..."
+            />
+            <ion-icon
+              name="search-sharp"
+              class="icon input-search-icon"
+              id="searchBtnActive"
+            ></ion-icon>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <nav class="navigation" id="menuContainer" style="visibility: hidden">
+      <div class="container" id="navContainer">
+        <div class="close">
+          <ion-icon
+            name="close-sharp"
+            class="icon close-icon"
+            id="closeMenuBtn"
+          ></ion-icon>
+        </div>
+        <ul>
+          <li>
+            <a href="#home" class="home menu-item active" id="menuItem"
+              ><ion-icon name="home-sharp" class="icon home-icon"></ion-icon
+              >home</a
+            >
+          </li>
+          <li id="account">
+            <a href="#account" class="account menu-item" id="menuItem"
+              ><ion-icon name="person-sharp" class="icon user-icon"></ion-icon
+              >account<ion-icon
+                name="chevron-down-sharp"
+                class="icon list-icon"
+                id="accountDropdownMenuBtn"
+              ></ion-icon
+            ></a>
+            <ul class="account-content" id="accountContent">
+              <li>
+                <a
+                  href="#my-profile"
+                  class="account-menu-item"
+                  id="accountMenuItem"
+                  >my profile</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#order-history"
+                  class="account-menu-item"
+                  id="accountMenuItem"
+                  >order history</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#my-likes"
+                  class="account-menu-item"
+                  id="accountMenuItem"
+                  >my likes</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#about" class="about menu-item" id="menuItem"
+              ><ion-icon
+                name="information-circle-sharp"
+                class="icon about-icon"
+              ></ion-icon
+              >about</a
+            >
+          </li>
+          <li>
+            <a href="#shop" class="shop menu-item" id="menuItem"
+              ><ion-icon name="card-sharp" class="icon shop-icon"></ion-icon
+              >shop</a
+            >
+          </li>
+          <li>
+            <a href="#services" class="services menu-item" id="menuItem"
+              ><ion-icon
+                name="hammer-sharp"
+                class="icon services-icon"
+              ></ion-icon>
+              services</a
+            >
+          </li>
+          <li>
+            <a href="#blog" class="blog menu-item" id="menuItem"
+              ><ion-icon
+                name="chatbubbles-sharp"
+                class="icon blog-icon"
+              ></ion-icon
+              >blog</a
+            >
+          </li>
+          <li>
+            <a href="#sign-out" class="sign-out menu-item" id="menuItem"
+              ><ion-icon
+                name="log-out-sharp"
+                class="icon sign-out-icon"
+              ></ion-icon
+              >sign out</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="overlay" id="overlay"></div>
+    </nav>
+
+    <script src="./assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
+
+<!-- JCFcodex -->
