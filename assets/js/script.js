@@ -11,12 +11,14 @@ overlay.addEventListener("click", closeMenu);
 function toggleMenu() {
   menuContainer.style.visibility = "visible";
   navContainer.classList.add("active");
+  overlay.classList.add("active");
   document.body.style.overflow = "hidden";
 }
 
 function closeMenu() {
   menuContainer.style.visibility = "hidden";
   navContainer.classList.remove("active");
+  overlay.classList.remove("active");
   document.body.style.overflow = "auto";
 }
 
